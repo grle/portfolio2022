@@ -1,0 +1,188 @@
+
+/**** INDEX ****/
+@media only screen and (min-width: 760px) {
+    /**** NAV BAR ****/
+    nav {
+        height: var(--nav-bar-height);
+    }
+    .menu ul {
+        display: block;
+    }
+    .mobile-menu, .menu .icon {
+        display: none;
+    }
+    .mobile-menu .icon {
+        display: initial;
+    }
+    .mobile-menu p:hover{
+        background: var(--neutral-dark);
+    }
+    .mobile-menu ul {
+        width: 105%; /* what is adding the extra width? */
+        height: 100vh;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .desktop-menu {
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: inline-block;
+    }
+    .desktop-menu li {
+        display: inline-block;
+    }
+    .desktop-menu p {
+        color: var(--neutral-dark);
+    }
+}
+
+/**** MID INDEX ****/
+@media only screen and (max-width: 1000px) {
+  .text {
+    width: var(--mid-margin);
+  }
+
+  /**** WORK ****/
+  .container {
+    width: var(--mid-margin);
+    margin: auto;
+  }
+  .project{
+    width: 49%;
+    /* max-width: 500px; */
+  }
+
+  /**** PROJECT ****/
+  .user-persona {
+    /* display: grid; */
+    grid-template-columns: 1fr;
+    max-width: 400px;
+  }
+  .row1A {
+    grid-row: 2;
+  }
+  .row2A {
+    grid-row: 3;
+  }
+  .row1B {
+    grid-row: 5;
+  }
+  .row2B {
+    grid-row: 6;
+  }
+  .row3A {
+    grid-row: 8;
+  }
+  .row2A, .row2B {
+    margin-bottom: 1rem;
+  }
+  .competitive-analysis {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+  }
+  .rowB1 {
+    grid-row: 2;
+  }
+  .rowC1 {
+    grid-row: 3;
+  }
+  .rowA2 {
+    margin-top: 1rem;
+  }
+  .rowE1 {
+    grid-row: 8;
+  }
+  .rowF1 {
+    grid-row: 9;
+  }
+
+}
+
+/**** MOBILE INDEX ****/
+@media only screen and (max-width: 760px) {
+  .text {
+    width: var(--mobile-margin);
+  }
+  h1 {
+    font-size: 5rem;
+  }
+  .intro-subheader {
+    font-size: 1.3rem;
+  }
+
+  /**** HIDE SCROLL UP BUTTON ****/
+  .float {
+    display: none;
+  }
+
+  /**** ABOUT ****/
+  .quote h3 {
+    width: var(--mobile-margin);
+  }
+
+  /**** WORK ****/
+  .sort-category {
+    max-width: 300px;
+    margin: auto;
+  }
+  .category {
+    margin: 5px;
+  }
+  .container {
+    width: var(--mobile-margin);
+    margin: auto;
+  }
+  .project{
+    width: 100%;
+    max-width: 500px;
+  }
+
+  /**** PROJECT ****/
+  .gif {
+    width: 306px;
+    margin-top: -241px;
+  }
+  .tablet {
+    width: 330px;
+  }
+  .header-image {
+    margin: var(--half-height) 0;
+    width: 100%;
+  }
+  .text-project {
+    width: var(--mobile-margin);
+  }
+  .column1, .column2 {
+    width: 100%;
+  }
+  .row {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  .half-size {
+    width: 75%;
+  }
+  .threeqtr-size {
+    width: 100%;
+  }
+  .to-full-size {
+    width: 100%;
+  }
+  .table-holder {
+    grid-template-columns: 1fr;
+  }
+  .hi-fi {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+  }
+
+  /* CONTACT */
+  .contact li {
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+  }
+}

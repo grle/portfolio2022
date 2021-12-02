@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta name="viewport" content="width=device-width">
+    <title>Grace Lee | Portfolio</title>
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/animate.css">
+    <link rel="stylesheet" href="styles/media-only.css">
+    <!-- <link rel="stylesheet" href="styles/project.css"> -->
+
+    <!-- favicon 16x16 -->
+    <link rel="icon" href="images/favicon.svg" type="image/png" sizes="16x16">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=East+Sea+Dokdo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+  </head>
+
+
+  <body>
+
+    <!-- SCROLL UP BUTTON -->
+    <!-- <button onclick="topFunction()" id="myBtn" title="Go to top">
+      <div class="float">
+        <p class="back-to-top link italics">&#8593; Back to top</p>
+      </div>
+    </button> -->
+
+      <!-- NAVIGATION BUTTON -->
+      <nav>
+        <div id="home">
+          <a href="index.html"><img src="images/icon.svg" /></a>
+        </div>
+
+        <!-- MENU -->
+        <div class="menu">
+            <!-- desktop menu -->
+            <div class="desktop-menu">
+                <ul>
+                    <li><a href="#about"><p class="link">ABOUT</p></a></li>
+                    <li><a href="#work"><p class="link">WORK</p></a></li>
+                    <li><a href="#contact-me"><p class="link">CONTACT</p></a></li>
+                </ul>
+            </div>
+            <!-- mobile menu -->
+            <div class="mobile-menu">
+                <img class="icon" src="images/object/close.svg" alt="Icon to close menu" />
+                <ul>
+                    <li><a href="#about"><h3 class="link">ABOUT</h3></a></li>
+                    <li><a href="#work"><h3 class="link">WORK</h3></a></li>
+                    <li><a href="#contact-me"><h3 class="link">CONTACT</h3></a></li>
+                </ul>
+            </div>
+            <img class="icon" id="menu-icon" src="images/object/menu.svg" alt="Menu icon" />
+        </div>
+      </nav>
+
+        <!-- INTRODUCTION + HERO -->
+        <div class= "intro">
+          <h1 class="fade-in one">GRACE LEE</h1>
+          <h3 class="fade-in one intro-subheader">
+            Instructional Designer & Educator</h3>
+          <h3 class="fade-in one intro-subheader">
+            UI | UX Designer</h3>
+
+          <div class="fade-in two">
+            <img class="hero-desktop" src="images/header.png"
+              alt="Image of GRACE LEE paying homage to Magritte's Son of Man
+              but with an avocado over face instead of apple">
+            <img class="hero-mobile" src="images/header_small.png"
+              alt="image of an avocado">
+            <img class="circle-animation" src="images/header_small.png"
+              alt="animated circle">
+          </div>
+        </div>
+      </header>
+
+      <!-- ABOUT -->
+      <div class="spacing" id="about">
+        <h1 class="center">ABOUT</h1>
+        <div class="text">
+
+          <!-- QUOTES -->
+          <div class="quote">
+            <img src="images/object/quote.svg" alt="Quotation mark" />
+              <div>
+                <h3 class="italics intro-subheader">I dare you to google image
+                  <a href="https://gracelee.net/#the.grace.lee.project" class="link" target="_blank">
+                    Grace Lee</a>. Your computer will burst into flames!</h3>
+                            <p>&#8212; Ali Wong, <span class="italics">Hard Knock Wife (2018)</span></p>
+              </div>
+          </div>
+
+          <!-- BULLET POINTS -->
+          <p>I was a . . .</p>
+          <ul class="bullet-points">
+            <li>Instructional Designer & UI/UX at a
+              <a href="https://customed.org"
+              class="link" target="_blank">nonprofit</a></li>
+
+            <li>Instructional Design & UI/UX Intern at an
+              <a href="https://play.google.com/store/apps/details?id=com.koochooloo.app&hl=en_US&gl=US"
+              class="link" target="_blank">EdTech startup</a></li>
+
+            <li>SAT/ACT & SSAT/ISEE instructor at a
+              <a href="https://www.zenithtutoring.com/"
+                class="link" target="_blank">tutoring</a>
+              <a href="https://gallagherprep.com/"
+                class="link" target="_blank">center</a></li>
+
+            <li>Graphic Designer at an
+              <a href="https://www.muralarts.org/"
+              class="link" target="_blank">arts education program</a></li>
+
+            <li>Postcatalogue Assistant at a
+              <a href="https://www.library.upenn.edu/vanpelt"
+              class="link" target="_blank">library</a></li>
+
+            <li>English Teacher at a
+              <a href="https://lydianacademy.com/"
+              class="link" target="_blank">private school</a></li>
+
+            <li>Getty Multicultural Education Intern at a
+              <a href="https://www.holocaustmuseumla.org/"
+              class="link" target="_blank">museum</a></li>
+
+            <li>Student Leader at a
+              <a href="https://reslife.ucla.edu/hitch"
+              class="link" target="_blank">university</a></li>
+          </ul>
+
+          <p>I have an eclectic background and it helps me create programs for a
+            broad audience. I value empathy, care, and a humanistic focus.</p>
+        </div>
+      </div>
+
+      <!-- WORK -->
+      <div class="spacing" id="work">
+        <h1 class="center">WORK</h1>
+
+        <!-- CATEGORY LIST -->
+        <div class="center sort-category">
+          <div class="category dark-button" onclick="displayALL()" id="btnAll">
+            ALL</div>
+          <div class="category link" onclick="displayInstructional()" id="btnInst">
+            Instructional Design</div>
+          <div class="category link" onclick="displayUX()" id="btnUX">
+            UI | UX Design</div>
+          <div class="category link" onclick="displayGraphic()" id="btnGraph">
+            Graphic Design</div>
+        </div>
+        <br>
+
+        <!-- PROJECT CONTAINER + PROJECT -->
+        <div class="container">
+
+          <!-- add other projects here -->
+
+          <!-- student zone app -->
+          <div class="project instructional ux">
+            <a href="pages/student-zone-app.html">
+              <img src="images/p06_StudentZone/student-zone-logo.png"
+              alt="logo for Fuel Up to Play 60: Student Zone App">
+              <div class="overlay">
+                <div class="tags">Mobile app teaching
+                  students healthy habits</div>
+                  <!-- for the mind and body -->
+              </div>
+            </a>
+          </div>
+
+          <!-- new england dairy -->
+          <div class="project instructional graphic">
+            <a href="pages/new-england-gameday.html">
+              <img src="images/p07_NED/NED-logo.png"
+              alt="logo for New England Dairy game day">
+              <div class="overlay">
+                <div class="tags">Nation-wide event for teaching students about dairy</div>
+              </div>
+            </a>
+          </div>
+
+          <!-- customED -->
+          <div class="project ux">
+            <a href="pages/customED-website.html">
+              <img src="images/p05_CustomED/customed-logo.png"
+              alt="logo for CustomED">
+              <div class="overlay">
+                <div class="tags">Website design for an education nonprofit</div>
+              </div>
+            </a>
+          </div>
+
+          <!-- nike -->
+          <div class="project instructional">
+            <a href="pages/game-growers.html">
+              <img src="images/p04_Nike/nike-game-growers-logo.png"
+              alt="logo for NIKE: Game Growers">
+              <div class="overlay">
+                <div class="tags">Program for NIKE
+                  encouraging girls to get involved in sports</div>
+              </div>
+            </a>
+          </div>
+
+          <!-- futp60 cheesy jokebook -->
+          <div class="project graphic">
+            <a href="pages/futp60-jokebook.html">
+              <img src="images/p08_jokebook/jokebook-front.png"
+              alt="cover page for Fuel Up to Play 60's Cheesy Jokebook">
+              <div class="overlay">
+                <div class="tags">Visual design for Fuel Up to Play 60's
+                  joke book</div>
+              </div>
+            </a>
+          </div>
+
+          <!-- chef k -->
+          <div class="project instructional ux graphic">
+            <a href="pages/chef-k.html">
+              <img src="images/p03_ChefK/chefk.png"
+              alt="logo for Chef Koochooloo">
+              <div class="overlay">
+                <div class="tags">Mobile app teaching K-12 STEAM
+                  through cooking</div>
+              </div>
+            </a>
+          </div>
+
+          <!-- mural arts -->
+          <div class="project instructional graphic">
+            <a href="pages/mural-arts-program.html">
+              <img src="images/p02_MuralArts/mural-arts-logo.png"
+              alt="logo for Mural Arts Program">
+              <div class="overlay">
+                <div class="tags">Designing art posters for an arts education program</div>
+              </div>
+            </a>
+          </div>
+
+          <!-- lamoth -->
+          <div class="project instructional">
+            <a href="pages/lamoth.html">
+              <img src="images/p01_LAMOTH/lamoth-front.png"
+              alt="logo for the LA Museum of the Holocaust">
+              <div class="overlay">
+                <div class="tags">Museum tour guide and audioguide content creator</div>
+              </div>
+            </a>
+          </div>
+
+          <!-- dunamis -->
+          <div class="project ux graphic">
+            <a href="pages/dunamis-harvest.html">
+              <img src="images/p00_dunamis/dunamis-front.png"
+              alt="logo for the Dunamis Harvest Global Ministries">
+              <div class="overlay">
+                <div class="tags">Website and brand design for a small nonprofit</div>
+              </div>
+            </a>
+          </div>
+
+      </div>
+    </div>
+
+    <!-- CONTACT -->
+    <div class="spacing" id="contact-me">
+      <h1 class="center">CONTACT</h1>
+
+      <ul class="contact">
+        <li>
+          <a href="mailto:gracelee.ux@gmail.com" target="_blank">
+            <img src="images/contact/email.svg" width="50px" alt="email icon">
+          </a>
+        </li>
+        <li>
+          <a href="https://dribbble.com/graceavocado" target="_blank">
+            <img src="images/contact/dribbble.svg" width="50px" alt="dribbble icon">
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/grle" target="_blank">
+            <img src="images/contact/github.svg" width="50px" alt="github icon">
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/graceleeln/" target="_blank">
+            <img src="images/contact/linkedin.svg" width="50px" alt="linkedin icon">
+          </a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/syl_avo/" target="_blank">
+            <img src="images/contact/instagram.svg" width="50px" alt="instagram icon">
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="foot">
+      designed & coded by GRACE LEE &#169; 2022
+    </footer>
+
+    <!-- JAVASCRIPT -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-126022629-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-126022629-1');
+    </script>
+
+  </body>

@@ -1,0 +1,110 @@
+html {
+  scroll-behavior: smooth;
+}
+
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-8px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+
+@keyframes grow {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-8px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+
+.fade-in {
+  opacity:0;  /* make things invisible upon start */
+  -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+  -moz-animation:fadeIn ease-in 1;
+  animation:fadeIn ease-in 1;
+
+  -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  -moz-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+
+  -webkit-animation-duration:1s;
+  -moz-animation-duration:1s;
+  animation-duration:1s;
+}
+
+.fade-in.one {
+  -webkit-animation-delay: 0s;
+  -moz-animation-delay: 0s;
+  animation-delay: 0s;
+}
+
+.fade-in.two {
+  -webkit-animation-delay: 1s;
+  -moz-animation-delay: 1s;
+  animation-delay: 1s;
+}
+
+.fade-in.three {
+  -webkit-animation-delay: 2s;
+  -moz-animation-delay: 2s;
+  animation-delay: 2s;
+}
+
+.fade-in.four {
+    -webkit-animation-delay: 2.5s;
+    -moz-animation-delay: 2.5s;
+    animation-delay: 2.5s;
+}
+
+/* OPACITY HOVER */
+.link, #scroll-down.link p, button, .contact img, .overlay, .dark-button {
+    -moz-transition: all .25s ease-in;
+    -o-transition: all .25s ease-in;
+    -webkit-transition: all .25s ease-in;
+    transition: all .25s ease-in;
+}
+
+/* LINK */
+.link:hover {
+  border-bottom-color: var(--white);
+  color: var(--dark-green);
+  cursor: pointer;
+}
+
+/* BUTTON */
+.dark-button:hover {
+  color: var(--white);
+  background-color: var(--dark);
+  cursor: pointer;
+}
+.project:hover .overlay {
+  opacity: 1;
+  cursor: pointer;
+}
+
+/* SCROLL UP BUTTON */
+.float {
+  animation: float 2s ease-in-out infinite;
+}
+.back-to-top:hover {
+  color: var(--black);
+}
+
+/* CONTACT */
+.contact img:hover {
+  opacity: 0.3;
+  filter: alpha(opacity=30);
+}

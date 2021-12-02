@@ -1,0 +1,247 @@
+
+/**** NAV BAR ****/
+nav {
+    /*display: none;*/
+    position: fixed;
+    z-index: 4;
+    top: 0;
+    width: 100%;
+    /* height: var(--nav-bar-height); */
+    background-color: var(--white);
+}
+.hero-img {
+    width: 90vw;
+    margin: 0 auto;
+}
+
+/**** LINK ****/
+.link {
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    /* font-weight: 500; */
+    border-bottom: 3px solid var(--light-green);
+}
+
+/**** MENU ****/
+#home {
+    margin-top: 0.5rem;
+    margin-left: 1.75rem;
+}
+#home, .mobile-menu li{
+    display: block;
+}
+#home img{
+  height: 4rem;
+}
+.desktop-menu {
+    display: none;
+}
+.menu {
+    float: right;
+}
+.menu .icon {
+    padding-top: 1rem;
+    padding-right: 1.5rem;
+    right: 0;
+    top: 0;
+    position: absolute;
+    /* height: 48px; */
+}
+
+nav .icon:hover {
+    cursor: pointer;
+}
+.mobile-menu {
+    display: none;
+    position: fixed;
+    z-index: 4;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 1);
+    background-repeat: no-repeat;
+    background-size: 14rem;
+    background-position-x: 10%;
+    background-position-y: 10%;
+    overflow: hidden;
+}
+.mobile-menu h3 {
+    margin-bottom: 2.5rem;
+    text-decoration: none;
+}
+.mobile-menu ul {
+    width: 110%; /* what is adding the extra width? */
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.menu li{
+    padding-right: 2.5rem;
+}
+
+/*** QUOTES ***/
+.quote {
+    width: 90%;
+    max-width: 40rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+.quote img {
+    width: 2rem;
+    margin-right: 1rem;
+}
+.quote h3, .quote a {
+    width: 80%;
+    color: var(--secondary-color);
+    font-weight: 600;
+}
+.quote p {
+    /* color: var(--secondary-color); */
+    text-align: right;
+    margin-top: 1rem;
+}
+.italics {
+    font-style: italic;
+}
+
+/**** INTRO ****/
+.intro{
+  padding-top: var(--nav-bar-height);
+  padding-bottom: var(--half-height);
+  text-align: center;
+  overflow: hidden;
+}
+/* .intro h3, .intro p {
+  width: 50%;
+  margin: auto;
+}
+.intro img {
+  width: 60%;
+  margin: auto;
+  padding-bottom: 20px;
+  max-width: 850px;
+} */
+.center {
+  text-align: center;
+}
+.spacing {
+  padding-top: var(--half-height);
+  padding-bottom: var(--half-height);
+}
+
+/**** TEXT BLOCK ****/
+.text {
+  margin: auto;
+  width: var(--web-margin);
+  max-width: 800px;
+  /* padding-top: var(--half-height); */
+}
+.bullet-points {
+  padding-left: 1em;
+}
+.bullet-points li {
+  padding-left: 1em;
+  text-indent: -2em;
+}
+.bullet-points li:before {
+  content: "◆";
+  padding-right: 1em;
+  line-height: 2em;
+}
+
+/**** CATEGORIES ****/
+.sort-category {
+}
+.category {
+  display: inline-block;
+  text-align: center;
+  margin: 10px;
+  padding-top: 10px;
+}
+.dark-button {
+  text-align: center;
+  border-style: solid;
+  /* background-color: var(--white); */
+  border-color: var(--dark);
+  border-width: 2px;
+  color: var(--dark);
+  padding: 10px;
+}
+
+/**** PROJECT ORGANIZER ****/
+.container {
+  width: 80%;
+  max-width: 1200px;
+  margin: auto;
+  clear: both;
+  text-align: center;
+}
+.project {
+  position: relative;
+  display: inline-block;
+  width: 32%;
+  margin: auto;
+}
+.project img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  opacity: 0;
+  /* transition: .5s ease; */
+  background-color: rgba(255,255,255,0.9);
+}
+.tags {
+  color: var(--black);
+  font-size: 1.3rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/**** CONTACT ****/
+.contact {
+  text-align: center;
+  margin-bottom: 0;
+}
+.contact li {
+  display: inline-block;
+  padding: 0;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+/**** SCROLL UP BUTTON ****/
+#myBtn {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  z-index: 99;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background: none;
+}
+.back-to-top {
+  border-bottom: none;
+  color: var(--dark-green);
+}

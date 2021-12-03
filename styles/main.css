@@ -120,7 +120,7 @@ nav .icon:hover {
 
 .intro-index {
   padding-top: var(--nav-bar-height);
-  padding-bottom: var(--nav-bar-height);
+  /* padding-bottom: var(--nav-bar-height); */
   text-align: center;
   overflow: hidden;
   background-color: var(--background-color);
@@ -129,49 +129,36 @@ nav .icon:hover {
   width: 1000px;
 }
 .circle-animation {
-  width: 100%;
-  max-width: 800px;
+  /* width: 100%; */
+  width: 628px;
   display: block;
-  margin: auto;
+  /* margin: auto;
   margin-top: -52rem;
   margin-bottom: 7rem;
-  padding-bottom: 1rem;
-  animation: rotation 250s infinite linear;
- }
- @keyframes rotation {
-   from {
-     transform: rotate(0deg);
-   }
-   to {
-     transform: rotate(360deg);
-   }
- }
-/* .image {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 500px;
-    height: 500px;
-    margin:-60px 0 0 -60px;
-    -webkit-animation:spin 4s linear infinite;
-    -moz-animation:spin 4s linear infinite;
-    animation:spin 4s linear infinite;
-}
-@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
-@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
-@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } } */
+  padding-bottom: 1rem; */
 
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 120px;
+  margin: auto;
+  z-index: -1;
+
+  animation: rotation 150s infinite linear;
+ }
 
 .hero-mobile {
   width: 100%;
   display: none;
 }
 .intro-index h1 {
-  margin-top: -25rem;
+  margin-top: -16rem;
   color: white;
+  /* margin-bottom: 1rem; */
 }
 .intro-index h3 {
   color: white;
+  padding-bottom: 1rem;
 }
 /* .intro h3, .intro p {
   width: 50%;

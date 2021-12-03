@@ -62,16 +62,17 @@
 
         <!-- INTRODUCTION + HERO -->
         <div class= "intro-index">
-          <div class="fade-in one">
-            <img class="hero-desktop" src="images/header/header-image-desktop.png"
-              alt="Image of GRACE LEE paying homage to Magritte's Son of Man
-              but with an avocado over face instead of apple">
-            <img class="hero-mobile" src="images/header/header-image-mobile.png"
-              alt="Image of GRACE LEE paying homage to Magritte's Son of Man
-              but with an avocado over face instead of apple">
+          <div class="fade-in one combine-image">
             <img class="circle-animation one image" src="images/header/circle.png"
               alt="animated circle">
-
+            <div class="image-cluster">
+              <img class="hero-desktop" src="images/header/header-image-desktop.png"
+                alt="Image of GRACE LEE paying homage to Magritte's Son of Man
+                but with an avocado over face instead of apple">
+              <img class="hero-mobile" src="images/header/header-image-mobile.png"
+                alt="Image of GRACE LEE paying homage to Magritte's Son of Man
+                but with an avocado over face instead of apple">
+            </div>
           </div>
 
           <h1 class="fade-in two">GRACE LEE</h1>
@@ -311,6 +312,18 @@
     <!-- JAVASCRIPT -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/script.js"></script>
+    <script>
+    var docWidth = document.documentElement.offsetWidth;
+
+    [].forEach.call(
+      document.querySelectorAll('*'),
+      function(el) {
+        if (el.offsetWidth > docWidth) {
+          console.log(el);
+        }
+      }
+    );
+    </script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-126022629-1"></script>

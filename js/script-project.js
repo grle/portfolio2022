@@ -63,5 +63,4 @@ $(function() {
       		relY = e.pageY - parentOffset.top;
     	$(this).find('span').css({top:relY, left:relX})
     });
-  // $('[href=#]').click(function(){return false});
 });

@@ -113,9 +113,65 @@ nav .icon:hover {
 /**** INTRO ****/
 .intro{
   padding-top: var(--nav-bar-height);
-  padding-bottom: var(--half-height);
+  padding-bottom: var(--nav-bar-height);
   text-align: center;
   overflow: hidden;
+}
+
+.intro-index {
+  padding-top: var(--nav-bar-height);
+  padding-bottom: var(--nav-bar-height);
+  text-align: center;
+  overflow: hidden;
+  background-color: var(--background-color);
+}
+.hero-desktop {
+  width: 1000px;
+}
+.circle-animation {
+  width: 100%;
+  max-width: 800px;
+  display: block;
+  margin: auto;
+  margin-top: -52rem;
+  margin-bottom: 7rem;
+  padding-bottom: 1rem;
+  animation: rotation 250s infinite linear;
+ }
+ @keyframes rotation {
+   from {
+     transform: rotate(0deg);
+   }
+   to {
+     transform: rotate(360deg);
+   }
+ }
+/* .image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 500px;
+    height: 500px;
+    margin:-60px 0 0 -60px;
+    -webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
+}
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } } */
+
+
+.hero-mobile {
+  width: 100%;
+  display: none;
+}
+.intro-index h1 {
+  margin-top: -25rem;
+  color: white;
+}
+.intro-index h3 {
+  color: white;
 }
 /* .intro h3, .intro p {
   width: 50%;
@@ -134,7 +190,9 @@ nav .icon:hover {
   padding-top: var(--half-height);
   padding-bottom: var(--half-height);
 }
-
+.top-space {
+  padding-top: var(--half-height);
+}
 /**** TEXT BLOCK ****/
 .text {
   margin: auto;

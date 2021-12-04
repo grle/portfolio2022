@@ -212,10 +212,13 @@
   .hero-mobile {
     display: block;
     margin: auto;
-    margin-top: 186px;
+    margin-top: 88px;
     width: 600px;
     overflow-x: hidden;
   }
+  /* .intro-index h1 {
+    margin-top: -10rem;
+  } */
   .circle-animation {
     width: 400px;
     margin: auto;
@@ -232,6 +235,9 @@
     height: 649px;
     width: 450px;
   }
+  /* .intro-index h1 {
+    margin-top: -16rem;
+  } */
   .circle-animation {
     width: 300px;
   }

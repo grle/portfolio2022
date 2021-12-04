@@ -151,7 +151,7 @@ nav .icon:hover {
 .circle-animation {
   width: 628px;
   padding-top: 1rem;
-  animation: rotation 150s infinite linear;
+  animation: rotation 130s infinite linear;
  }
 .hero-mobile {
   width: 100%;
@@ -274,6 +274,7 @@ nav .icon:hover {
 /**** SCROLL UP BUTTON ****/
 #myBtn {
   position: fixed;
+  display: none;
   bottom: 50px;
   right: 50px;
   z-index: 99;

@@ -186,12 +186,21 @@
 }
 
 /* HEADER */
+@media only screen and (max-width: 700px) {
+  .combine-image {
+    width: 700px;
+    /* margin-top: -2px; */
+  }
+  /* .circle-animation {
+    width: 500px;
+  } */
+}
 @media only screen and (max-width: 600px) {
   h1 {
     font-size: 5rem;
   }
   .combine-image {
-    width: 400px;
+    width: 500px;
     height: 713px;
   }
   .intro-subheader {
@@ -203,12 +212,12 @@
   .hero-mobile {
     display: block;
     margin: auto;
-    margin-top: 317px;
-    width: 500px;
+    margin-top: 186px;
+    width: 600px;
     overflow-x: hidden;
   }
   .circle-animation {
-    width: 300px;
+    width: 400px;
     margin: auto;
     margin-top: 2rem;
   }
@@ -216,6 +225,23 @@
 
 @media only screen and (max-width: 450px) {
   .hero-mobile {
-    margin-left: -4rem;
+    width: 450px;
+    margin-top: 317px;
+  }
+  .combine-image {
+    height: 649px;
+    width: 450px;
+  }
+  .circle-animation {
+    width: 300px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .hero-mobile {
+    width: 400px;
+  }
+  .combine-image {
+    height: 584px;
+    width: 400px;
   }
 }

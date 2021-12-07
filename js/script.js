@@ -29,6 +29,24 @@ $( document ).ready(function() {
     });
 });
 
+/////POSITION AWARE BUTTON
+//https://codepen.io/aslamshoev/pen/gOMmRej
+$(function() {
+  $('.btn-posnawr')
+    .on('mouseenter', function(e) {
+			var parentOffset = $(this).offset(),
+      		relX = e.pageX - parentOffset.left,
+      		relY = e.pageY - parentOffset.top;
+			$(this).find('span').css({top:relY, left:relX})
+    })
+    .on('mouseout', function(e) {
+			var parentOffset = $(this).offset(),
+      		relX = e.pageX - parentOffset.left,
+      		relY = e.pageY - parentOffset.top;
+    	$(this).find('span').css({top:relY, left:relX})
+    });
+});
+
 ////////////SORT CATEGORY
 ////////////CLASS: instructional ux graphic
 ////////////BUTTON: btnAll btnInst btnUX btnGraph
@@ -55,7 +73,6 @@ $(document).ready(function(){
 });
 
 /////CATEGORY LINK
-
 /////ONCLICK: displayALL() displayInstructional() displayUX() displayGraphic()
 function displayALL() {
   document.getElementById("btnInst").style.color = "var(--dark)";

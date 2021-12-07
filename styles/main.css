@@ -126,7 +126,7 @@ nav .icon:hover {
   background-color: var(--background-color);
 }
 .combine-image {
-  width: 1000px;
+  width: 807px;
   height: 700px;
   margin: auto;
   overflow: hidden;
@@ -142,7 +142,7 @@ nav .icon:hover {
 }
 .hero-desktop {
   width: 807px;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 .circle-position {
   padding-top: 1rem;
@@ -158,8 +158,9 @@ nav .icon:hover {
   display: none;
 }
 .intro-index h1 {
-  margin-top: -16rem;
+  margin-top: -235px;
   color: white;
+  font-size: 8rem;
 }
 .intro-index h3 {
   color: white;

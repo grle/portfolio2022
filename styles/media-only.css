@@ -1,6 +1,5 @@
-/**** INDEX ****/
+/**** NAV BAR ****/
 @media only screen and (min-width: 760px) {
-    /**** NAV BAR ****/
     nav {
         height: var(--nav-bar-height);
     }
@@ -46,9 +45,7 @@
   }
 
   /**** INTRO ****/
-  /* .intro h1 {
-    margin-top: -15rem;
-  } */
+
   /**** WORK ****/
   .container {
     width: var(--mid-margin);
@@ -114,6 +111,14 @@
   /**** HIDE SCROLL UP BUTTON ****/
   .float {
     display: none;
+  }
+
+  /**** INTRO ****/
+  .intro-index h1 {
+    font-size: 6rem;
+  }
+  .intro-index h3 {
+    font-size: 1.3rem;
   }
 
   /**** ABOUT ****/
@@ -184,13 +189,11 @@
   }
 }
 
-/* HEADER */
+/* HEADER ONLY */
 @media only screen and (max-width: 760px) {
-  .combine-image {
-    width: 700px;
+  .image-cluster {
+    margin-top: -707px;
   }
-}
-@media only screen and (max-width: 600px) {
   h1 {
     font-size: 5rem;
   }
@@ -198,11 +201,8 @@
     width: 500px;
     height: 713px;
   }
-  .intro-subheader {
-    font-size: 1.3rem;
-  }
   .hero-desktop {
-    margin-top: 175px;
+    margin-top: 209px;
   }
   .circle-animation {
     width: 400px;
@@ -210,7 +210,7 @@
     margin-top: 2rem;
   }
 }
-
+/* HEADER MOBILE */
 @media only screen and (max-width: 450px) {
   .hero-desktop {
     display: none;
@@ -218,7 +218,7 @@
   .hero-mobile {
     display: block;
     margin: auto;
-    margin-left: -3px;
+    margin-left: -1px;
     overflow-x: hidden;
   }
     .hero-mobile {
@@ -226,14 +226,26 @@
     margin-top: 317px;
   }
   .combine-image {
-    height: 649px;
+    /* height: 649px; */
     width: 450px;
   }
-  /* .intro-index h1 {
-    margin-top: -16rem;
-  } */
+  .intro-index h1 {
+    margin-top: -400px;
+  }
   .circle-animation {
     width: 300px;
+  }
+}
+@media only screen and (max-width: 414px) {
+  .hero-mobile {
+    width: 414px;
+  }
+  .combine-image {
+    height: 584px;
+    width: 414px;
+  }
+  .intro-index h1 {
+    margin-top: -319px;
   }
 }
 @media only screen and (max-width: 400px) {
@@ -241,7 +253,32 @@
     width: 400px;
   }
   .combine-image {
-    height: 584px;
     width: 400px;
+  }
+  .intro-index h1 {
+    margin-top: -336px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .hero-mobile {
+    width: 375px;
+  }
+  .combine-image {
+    width: 375px;
+  }
+  .intro-index h1 {
+    font-size: 5rem;
+    margin-top: -346px;
+  }
+}
+@media only screen and (max-width: 360px) {
+  .hero-mobile {
+    width: 360px;
+  }
+  .combine-image {
+    width: 360px;
+  }
+  .intro-index h1 {
+    margin-top: -365px;
   }
 }

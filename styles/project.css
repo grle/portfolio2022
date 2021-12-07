@@ -172,7 +172,7 @@
 }
 .competitive-analysis div {
   background-color: var(--light-grey);
-  padding: 0 1rem;
+  padding: 0 2rem;
 }
 .competitive-analysis h3 {
   padding-top: 1rem;
@@ -195,7 +195,7 @@
 }
 .user-persona div {
   background-color: var(--light-grey);
-  padding: 0 1rem;
+  padding: 0 2rem;
 }
 .user-persona h3 {
   padding-top: 1rem;

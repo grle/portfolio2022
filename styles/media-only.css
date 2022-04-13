@@ -181,6 +181,10 @@
     grid-template-columns: 1fr;
     max-width: 400px;
   }
+  .before-after {
+    grid-template-columns: 1fr;
+    /* max-width: 400px; */
+  }
 
   /* CONTACT */
   .contact li {

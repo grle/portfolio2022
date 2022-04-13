@@ -100,6 +100,9 @@
 .bottom-space {
   padding-bottom: var(--half-height);
 }
+.bottom-space-quarter {
+  padding-bottom: var(--quarter-height);
+}
 .center-me {
   display: block;
   margin: auto;
@@ -161,6 +164,16 @@
   padding: 1rem;
   background-color: var(--light-grey);
   font-size: var(--small-font);
+}
+.before-after {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+}
+.before-after div {
+  padding: 1rem;
+  background-color: var(--light-grey);
+  /* font-size: var(--small-font); */
 }
 
 /* COMPETITIVE ANALYSIS */

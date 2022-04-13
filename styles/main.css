@@ -96,7 +96,7 @@ nav .icon:hover {
     width: 2rem;
     margin-right: 1rem;
 }
-.quote h3, .quote a {
+.quote h3, .quote a  {
     width: 80%;
     color: var(--secondary-color);
     font-weight: 600;
@@ -108,6 +108,10 @@ nav .icon:hover {
 }
 .italics {
     font-style: italic;
+}
+.secondary-color-text {
+  color: var(--secondary-color);
+  font-weight: 600;
 }
 
 /**** INTRO ****/
@@ -176,7 +180,12 @@ nav .icon:hover {
 .top-space {
   padding-top: var(--half-height);
 }
-
+.error-header {
+  background-color: var(--background-color);
+}
+.error-header div {
+  max-width: 800px;
+}
 /**** TEXT BLOCK ****/
 .text {
   margin: auto;

@@ -65,9 +65,9 @@ $(document).ready(function(){
     $(".project").hide();
     $(".ux").fadeIn();
   });
-  $("#btnGraph").click(function(){
+  $("#btnUXW").click(function(){
     $(".project").hide();
-    $(".graphic").fadeIn();
+    $(".uxw").fadeIn();
   });
 
 });
@@ -79,29 +79,30 @@ function displayALL() {
   document.getElementById("btnInst").style['border-bottom-color'] = "var(--light-green)";
   document.getElementById("btnUX").style.color = "var(--dark)";
   document.getElementById("btnUX").style['border-bottom-color'] = "var(--light-green)";
-  document.getElementById("btnGraph").style.color = "var(--dark)";
-  document.getElementById("btnGraph").style['border-bottom-color'] = "var(--light-green)";
-}function displayInstructional() {
+  document.getElementById("btnUXW").style.color = "var(--dark)";
+  document.getElementById("btnUXW").style['border-bottom-color'] = "var(--light-green)";
+}
+function displayInstructional() {
   document.getElementById("btnInst").style.color = "var(--light-green)";
   document.getElementById("btnInst").style['border-bottom-color'] = "var(--white)";
   document.getElementById("btnUX").style.color = "var(--dark)";
   document.getElementById("btnUX").style['border-bottom-color'] = "var(--light-green)";
-  document.getElementById("btnGraph").style.color = "var(--dark)";
-  document.getElementById("btnGraph").style['border-bottom-color'] = "var(--light-green)";
+  document.getElementById("btnUXW").style.color = "var(--dark)";
+  document.getElementById("btnUXW").style['border-bottom-color'] = "var(--light-green)";
 }
 function displayUX() {
   document.getElementById("btnInst").style.color = "var(--dark)";
   document.getElementById("btnInst").style['border-bottom-color'] = "var(--light-green)";
   document.getElementById("btnUX").style.color = "var(--light-green)";
   document.getElementById("btnUX").style['border-bottom-color'] = "var(--white)";
-  document.getElementById("btnGraph").style.color = "var(--dark)";
-  document.getElementById("btnGraph").style['border-bottom-color'] = "var(--light-green)";
+  document.getElementById("btnUXW").style.color = "var(--dark)";
+  document.getElementById("btnUXW").style['border-bottom-color'] = "var(--light-green)";
 }
-function displayGraphic() {
+function displayUXW() {
   document.getElementById("btnInst").style.color = "var(--dark)";
   document.getElementById("btnInst").style['border-bottom-color'] = "var(--light-green)";
   document.getElementById("btnUX").style.color = "var(--dark)";
   document.getElementById("btnUX").style['border-bottom-color'] = "var(--light-green)";
-  document.getElementById("btnGraph").style.color = "var(--light-green)";
-  document.getElementById("btnGraph").style['border-bottom-color'] = "var(--white)";
+  document.getElementById("btnUXW").style.color = "var(--light-green)";
+  document.getElementById("btnUXW").style['border-bottom-color'] = "var(--white)";
 }

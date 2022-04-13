@@ -180,10 +180,10 @@ nav .icon:hover {
 .top-space {
   padding-top: var(--half-height);
 }
-.error-header {
+.error-header- {
   background-color: var(--background-color);
 }
-.error-header div {
+.error-header- div {
   max-width: 800px;
 }
 /**** TEXT BLOCK ****/

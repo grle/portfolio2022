@@ -15,11 +15,14 @@ nav {
 }
 
 /**** LINK ****/
-.link {
+.link  {
     text-decoration: none;
     font-family: "Montserrat", sans-serif;
     /* font-weight: 500; */
     border-bottom: 3px solid var(--light-green);
+}
+.link-category {
+    border-bottom: 3px solid var(--white);
 }
 
 /**** MENU ****/

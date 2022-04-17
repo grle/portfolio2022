@@ -22,7 +22,7 @@ nav {
     border-bottom: 3px solid var(--light-green);
 }
 .link-category {
-    border-bottom: 3px solid var(--white);
+    border-bottom: 3px solid var(--white); 
 }
 
 /**** MENU ****/
